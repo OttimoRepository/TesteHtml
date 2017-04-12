@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Ottimo - Tecnologia e Qualidade</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var nav = $('.navMenu');
+        var pos = nav.position();
+
+        $(window).scroll(function(){
+          var windowpos = $(window).scrollTop();
+          if(windowpos>=150){
+            nav.addClass('fixo');
+          }
+          else {
+            nav.removeClass('fixo');
+          }
+        })
+
+          $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('html, body').animate({
+                    scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+                }
+            }
+          })
+
+
+      });
+     </script>
+</head>
+
+<body>
+<div id="publicidade">
+  <p>Siga a Ottimo<a href="https://www.facebook.com/ottimotech/" class="face"></a><a href="https://www.instagram.com/ottimotech/" class="insta"></a><a href="https://www.linkedin.com/company-beta/16245155/" class="linkein"></a></p>
+</div>
+
+<div id="contato">
+  <ul>
+    <li class="logo"><p>OTTIMO</p></li>
+    <li><span class="tel"></span><a href="tel:31988496811">(31)9-88496811</a><p>De Segunda à Sexta, 8:00 - 18:00</p></li>
+    <li><span class="mail"></span><a href="mailto:contato@ottimotech.com.br">contato@ottimotech.com.br</a>  <p>Deixe-nos uma mensagem!</p></li>
+    <li><span class="local"></span><a href="https://www.google.com.br/maps/place/Rua+dos+Guajajaras,+715+-+Centro,+Belo+Horizonte+-+MG,+30180-100/@-19.9252924,-43.9429228,17z/data=!3m1!4b1!4m5!3m4!1s0xa699e10d413563:0xab82a587bea888ef!8m2!3d-19.9252924!4d-43.9407287?hl=pt-BR">Localização</a><p>Belo Horizonte</p></li>
+    <li><a href="#" class="orçamento">Orçamento</a></li>
+  </ul>
+</div>
+
+<nav id="navegador" class="navMenu">
+  <ul>
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#Sobre">Sobre da Ottimo</a></li>
+    <li><a href="#Servico">Serviço</a></li>
+    <li><a href="#Noticias">Noticias</a></li>
+    <li><a href="#Contato2">Contato</a></li>
+  </ul>
+</nav>
+
+<div class ="sect sectHome" id="Home">
+  <h1>OTTIMO - Tecnologia e Qualidade</h1>
+  <p>najndjnajdnsajdnjnddsdnjndjasdsaanndjasndjna</p>
+</div>
+<div class ="sect sectSobre" id="Sobre">
+  <h1>Sobre a empresa</h1>
+  <h2>slogan da empresa</h2>
+  <div id="Sobre_Txt">
+    <h3>O que você deve saber sobre nós.</h3>
+    <p>hbshbshbashdhsbdhbasbhdbhsahbdhbasdbhabhsdbhasbdhsbhabhas</p>
+  </div>
+</div>
+<div class ="sect sectServiço" id="Servico">
+<h1>EM QUE PODEMOS SER ÚTIL?</h1>
+
+  <table>
+    <tr>
+      <td><img src="images/TI.jpg" alt=""><h2>TI / Outsourcing</h2> <p>Suporte remoto? Realizamos! Mantemos o seu equipamento sempre em ótimas condições de funcionamento para evitar imprevistos no trabalho.
+Softwares de gestão? Desenvolvemos! Apresente-nos o desafio da sua empresa que teremos o prazer de otimizar uma solução inteligente para você.</p></td><td class="espaco"></td>
+      <td><img src="images/telecom.jpg" alt=""><h2>Telecomunicações</h2> <p>Excelência na implantação e gerenciamento de equipamentos de transmissão SDH, DWDM, IP e rádio! Consulte já uma solução que atenda ao seu negócio, seja Ottimo!</p></td>
+    </tr>
+    <tr>
+      <td><img src="images/Infra.jpg" alt=""><h2>Infraestrutura</h2><p>Cabeamento estruturado, implantação, manutenção e otimização de servidores no padrão Ottimo de qualidade.</p></td><td class="espaco"></td>
+      <td><img src="images/automação.jpg" alt=""><h2>Automação</h2><p>Interação total da sua casa com você! Automação de alta qualidade e custo reduzido com interfaces desenvolvidas por nós mesmos para melhor atender o seu padrão de conforto em casa. Conheça as soluções!</p></td>
+    </tr>
+
+  </table>
+
+</div>
+
+<div class ="sect sectNoticias" id="Noticias"></div>
+<div class ="sect sectContato" id="Contato2">
+  <table>
+    <tr>
+      <td><img src="images/tel.png" alt="" class="orçamento"><h2>Telefone</h2><p>Ligue pra nós, será um
+prazer atender você.
+31 3491-1853</p><a href="#">Fazer cotação</a></td><td class="espaco"></td>
+      <td><img src="images/mail.png" alt=""><h2>Email</h2><p>Você também pode entrar em contato por e-mail.</p><a href="#" class="orçamento">Contato</a></td><td class="espaco"></td>
+      <td><img src="images/mail.png" alt=""><h2>Cotação Online</h2><p>Faça uma cotação online, você será
+respondendo em 24 horas</p><a href="#" class="orçamento">Fazer cotação</a></td>
+    </tr>
+  </table>
+
+
+</div>
+
+
+</body>
+</html>
